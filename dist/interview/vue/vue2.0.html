@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、Vue概念 | 我的博客</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="Just playing around">
+    
+    <link rel="preload" href="/assets/css/0.styles.35bcedcf.css" as="style"><link rel="preload" href="/assets/js/app.eaa3c69d.js" as="script"><link rel="preload" href="/assets/js/2.c479d7b8.js" as="script"><link rel="preload" href="/assets/js/25.f7b82147.js" as="script"><link rel="prefetch" href="/assets/js/10.0fc36770.js"><link rel="prefetch" href="/assets/js/11.1bc405aa.js"><link rel="prefetch" href="/assets/js/12.223b2240.js"><link rel="prefetch" href="/assets/js/13.4815730f.js"><link rel="prefetch" href="/assets/js/14.b46e38ca.js"><link rel="prefetch" href="/assets/js/15.841feace.js"><link rel="prefetch" href="/assets/js/16.2b2dd690.js"><link rel="prefetch" href="/assets/js/17.184905ee.js"><link rel="prefetch" href="/assets/js/18.f0b884f1.js"><link rel="prefetch" href="/assets/js/19.75e26d14.js"><link rel="prefetch" href="/assets/js/20.95c65deb.js"><link rel="prefetch" href="/assets/js/21.ad501b2a.js"><link rel="prefetch" href="/assets/js/22.50c4e3f0.js"><link rel="prefetch" href="/assets/js/23.a7233b2e.js"><link rel="prefetch" href="/assets/js/24.3c33a9c2.js"><link rel="prefetch" href="/assets/js/26.f29baf95.js"><link rel="prefetch" href="/assets/js/27.39ccdf98.js"><link rel="prefetch" href="/assets/js/28.626f1d9f.js"><link rel="prefetch" href="/assets/js/29.68c6927f.js"><link rel="prefetch" href="/assets/js/3.50d6364e.js"><link rel="prefetch" href="/assets/js/4.ed8f2e2d.js"><link rel="prefetch" href="/assets/js/5.32dde0b2.js"><link rel="prefetch" href="/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/assets/js/7.b10070a8.js"><link rel="prefetch" href="/assets/js/8.a4670996.js"><link rel="prefetch" href="/assets/js/9.8b046a68.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.35bcedcf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">我的博客</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/install/install.html" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/mianshiti/01面试题.html" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/vuedoc/vue文档.html" class="nav-link">
+  vue相关
+</a></div><div class="nav-item"><a href="/jsdoc/jsdoc.html" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/blog/fontend/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试题" class="dropdown-title"><span class="title">前端面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试题" class="mobile-dropdown-title"><span class="title">前端面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/javascript/" class="nav-link">
+  js面试题
+</a></li><li class="dropdown-item"><!----> <a href="/interview/minapp/" class="nav-link">
+  小程序面试题
+</a></li><li class="dropdown-item"><!----> <a href="/interview/git/" class="nav-link">
+  git指令
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue/" class="nav-link router-link-active">
+  vue面试题
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/install/install.html" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/mianshiti/01面试题.html" class="nav-link">
+  面试题
+</a></div><div class="nav-item"><a href="/vuedoc/vue文档.html" class="nav-link">
+  vue相关
+</a></div><div class="nav-item"><a href="/jsdoc/jsdoc.html" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/blog/fontend/" class="nav-link">
+  前端
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端面试题" class="dropdown-title"><span class="title">前端面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端面试题" class="mobile-dropdown-title"><span class="title">前端面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/javascript/" class="nav-link">
+  js面试题
+</a></li><li class="dropdown-item"><!----> <a href="/interview/minapp/" class="nav-link">
+  小程序面试题
+</a></li><li class="dropdown-item"><!----> <a href="/interview/git/" class="nav-link">
+  git指令
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue/" class="nav-link router-link-active">
+  vue面试题
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/interview/vue/" aria-current="page" class="sidebar-link">/interview/vue/</a></li><li><a href="/interview/vue/vue2.0.html" aria-current="page" class="active sidebar-link">一、Vue概念</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#一、vue概念" class="sidebar-link">一、Vue概念</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_1-vue特点" class="sidebar-link">1.Vue特点</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_2-vue中mvvm模型" class="sidebar-link">2.vue中MVVM模型</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_3-介绍一下spa以及spa有什么缺点" class="sidebar-link">3.介绍一下SPA以及SPA有什么缺点</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_4-vue项目优化" class="sidebar-link">4.Vue项目优化</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_5-vue打开页面空白原因" class="sidebar-link">5.vue打开页面空白原因</a></li></ul></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#二、vue基础" class="sidebar-link">二、Vue基础</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_1-vue中v-if和v-show是做什么用的-有什么区别" class="sidebar-link">1.vue中v-if和v-show是做什么用的，有什么区别</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_2-如何让css只在当前组件中起作用-并且如何进行样式穿透" class="sidebar-link">2.如何让CSS只在当前组件中起作用，并且如何进行样式穿透</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_3-v-model是什么-怎么使用-实现原理是什么-vue中标签怎么绑定事件" class="sidebar-link">3.v-model是什么？怎么使用？实现原理是什么？vue中标签怎么绑定事件？</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_4-vue-loader是什么-使用它有什么用途" class="sidebar-link">4.vue-loader是什么？使用它有什么用途？</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_5-nexttick是做什么的" class="sidebar-link">5.nextTick是做什么的？</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_6-vue组件中data为什么必须是函数" class="sidebar-link">6.Vue组件中data为什么必须是函数？</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_7-对keep-alive的了解" class="sidebar-link">7.对keep-alive的了解</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_8-vue中key的作用" class="sidebar-link">8.Vue中key的作用</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_9-v-if与v-for的优先级" class="sidebar-link">9.v-if与v-for的优先级</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_10-ref是什么" class="sidebar-link">10.ref是什么</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_11-双向数据绑定原理" class="sidebar-link">11.双向数据绑定原理</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_12-vue组件通信" class="sidebar-link">12.vue组件通信</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_13-props和data优先级谁高" class="sidebar-link">13.props和data优先级谁高</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_14-computed-methods-watch有什么区别" class="sidebar-link">14.computed ,methods ,watch有什么区别</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_15-vue常用的指令有哪些" class="sidebar-link">15.vue常用的指令有哪些</a></li></ul></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#三、vue生命周期部分" class="sidebar-link">三、Vue生命周期部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_1-vue生命周期有哪些" class="sidebar-link">1.vue生命周期有哪些</a></li></ul></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#四、vue请求数据接口部分" class="sidebar-link">四、Vue请求数据接口部分</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#五、vue路由部分" class="sidebar-link">五、Vue路由部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_1-路由导航守卫有哪些" class="sidebar-link">1.路由导航守卫有哪些</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_2-路由模式有哪些" class="sidebar-link">2.路由模式有哪些</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_3-路由跳转的方式" class="sidebar-link">3.路由跳转的方式</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_4-route和-router的区别" class="sidebar-link">4.$route和$router的区别</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_5-怎么使用动态路由-怎么获取动态路由的参数" class="sidebar-link">5.怎么使用动态路由,怎么获取动态路由的参数</a></li></ul></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#六、vuex部分" class="sidebar-link">六、Vuex部分</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_1-vuex解决刷新数据丢失的问题" class="sidebar-link">1.vuex解决刷新数据丢失的问题</a></li><li class="sidebar-sub-header"><a href="/interview/vue/vue2.0.html#_1-解释一下vuex" class="sidebar-link">1.解释一下vuex</a></li></ul></li></ul></li><li><a href="/interview/vue/vue面试题.html" class="sidebar-link">vue2面试题</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一、vue概念"><a href="#一、vue概念" class="header-anchor">#</a> 一、Vue概念</h2> <h3 id="_1-vue特点"><a href="#_1-vue特点" class="header-anchor">#</a> 1.Vue特点</h3> <div class="language- extra-class"><pre><code>1.采用组件化模式，提高代码复用率，且让代码更好维护
+2.声明式编码，让编码人员无需直接操作DOM，提高开发效率
+3.使用虚拟DOM+优秀的Diff算法，尽量复用DOM节点
+</code></pre></div><h3 id="_2-vue中mvvm模型"><a href="#_2-vue中mvvm模型" class="header-anchor">#</a> 2.vue中MVVM模型</h3> <div class="language- extra-class"><pre><code>M：模型(Model)：对应daa中的数据
+V：视图（View）：模板
+VM:视图模型（ViewModel）:Vue实例对象
+</code></pre></div><h3 id="_3-介绍一下spa以及spa有什么缺点"><a href="#_3-介绍一下spa以及spa有什么缺点" class="header-anchor">#</a> 3.介绍一下SPA以及SPA有什么缺点</h3> <div class="language- extra-class"><pre><code>SPA是单页面应用，就是指只有一个主页面的应用
+优点：用户体验好，快，内容改变不需要重新加载整个页面，对服务器压力较小，前后端分离，页面效果炫酷
+缺点：不利于seo，初次加载耗时较多，页面复杂度高
+</code></pre></div><h3 id="_4-vue项目优化"><a href="#_4-vue项目优化" class="header-anchor">#</a> 4.Vue项目优化</h3> <div class="language- extra-class"><pre><code>1.路由懒加载:使用时候会变成按需加载
+const router = new VueRouter({
+    routes:[
+        {path:'/foo',component:()=&gt;import('./Foo.vue')}
+    ]
+})
+2.keep-alive 缓存页面
+3.使用v-show复用修复DOM
+4.v-for与v-if避免同时使用
+5.长列表性能优化
+    只显示，不发生任何变化，就不需要相应画
+    大数据长列表，可采用虚拟滚动  &lt;recycle-scroller&gt; 只渲染显示范围的数据，用户滚动的时候更新后面的数据
+6.事件的销毁 定时器的清除
+7.图片懒加载  vue-lazyload 
+8.第三方插件按需引入
+（1）代码层面的优化
+
+v-if 和 v-show 区分使用场景
+
+computed 和 watch 区分使用场景
+
+v-for 遍历必须为 item 添加 key，且避免同时使用 v-if
+
+长列表性能优化
+
+事件的销毁
+
+图片资源懒加载
+
+路由懒加载
+
+第三方插件的按需引入
+
+优化无限列表性能
+
+服务端渲染 SSR or 预渲染
+（2）Webpack 层面的优化
+
+Webpack 对图片进行压缩
+
+减少 ES6 转为 ES5 的冗余代码
+
+提取公共代码
+
+模板预编译
+
+提取组件的 CSS
+
+优化 SourceMap
+
+构建结果输出分析
+
+Vue 项目的编译优化
+</code></pre></div><h3 id="_5-vue打开页面空白原因"><a href="#_5-vue打开页面空白原因" class="header-anchor">#</a> 5.vue打开页面空白原因</h3> <div class="language- extra-class"><pre><code>在vue.config.js文件中的  publicPath:'/   =&gt;./
+</code></pre></div><h2 id="二、vue基础"><a href="#二、vue基础" class="header-anchor">#</a> 二、Vue基础</h2> <h3 id="_1-vue中v-if和v-show是做什么用的-有什么区别"><a href="#_1-vue中v-if和v-show是做什么用的-有什么区别" class="header-anchor">#</a> 1.vue中v-if和v-show是做什么用的，有什么区别</h3> <div class="language- extra-class"><pre><code>v-if    创建节点  没有元素
+v-shou  显示，隐藏 有元素
+
+v-if是真正的条件渲染，因为他会确保在切换过程中条件块内的事件监听器和子组件适当地被销毁和重建
+v-show不管初始条件是什么，元素都会进行渲染，只是简单的基于css进行切换
+一般v-if有更高的切换开销，而v-show有更高的初始渲染开销，因此需要频繁的切换则使用v-show比较好
+如果运行时条件不太可能变则使用v-if较好
+</code></pre></div><h3 id="_2-如何让css只在当前组件中起作用-并且如何进行样式穿透"><a href="#_2-如何让css只在当前组件中起作用-并且如何进行样式穿透" class="header-anchor">#</a> 2.如何让CSS只在当前组件中起作用，并且如何进行样式穿透</h3> <div class="language- extra-class"><pre><code>在style标签内加上scoped 属性就表示样式只在当前组件内使用&lt;style scoped&gt;
+样式穿透: 父元素 /deep/||&gt;&gt;&gt; 子元素
+</code></pre></div><h3 id="_3-v-model是什么-怎么使用-实现原理是什么-vue中标签怎么绑定事件"><a href="#_3-v-model是什么-怎么使用-实现原理是什么-vue中标签怎么绑定事件" class="header-anchor">#</a> 3.v-model是什么？怎么使用？实现原理是什么？vue中标签怎么绑定事件？</h3> <div class="language- extra-class"><pre><code>v-model可以实现双向绑定
+事件绑定 v-on:click 简写 @click
+在移动端click有300ms延迟问题，解决这个问题可以引入faskClick
+npm install fastclick
+import FastClick from 'fastclick'
+FastClick.attach(document.body)
+</code></pre></div><h3 id="_4-vue-loader是什么-使用它有什么用途"><a href="#_4-vue-loader是什么-使用它有什么用途" class="header-anchor">#</a> 4.vue-loader是什么？使用它有什么用途？</h3> <div class="language- extra-class"><pre><code>解释：vue文件的一个加载器，将template/js/style 转换成js模块
+用途：js可以写es6,style样式可以写scss或者less,template等
+</code></pre></div><h3 id="_5-nexttick是做什么的"><a href="#_5-nexttick是做什么的" class="header-anchor">#</a> 5.nextTick是做什么的？</h3> <div class="language- extra-class"><pre><code>nextTick是在下次DOM更新循环结束之后执行的延迟回调，在修改数据之后使用nextTick，则可以在回调中获取更新后的DOM
+使用场景：引入swiper 实例化轮播图时
+</code></pre></div><h3 id="_6-vue组件中data为什么必须是函数"><a href="#_6-vue组件中data为什么必须是函数" class="header-anchor">#</a> 6.Vue组件中data为什么必须是函数？</h3> <div class="language- extra-class"><pre><code>防止组件与组件之间的数据污染，作为一个函数返回对象，那么每一个data属性都是独立的，互不影响
+Vue组件可能存在多个实例，如果使用对象形式定义data,则会导致他们共用一个data对象，那么状态会变更
+将影响所有的组件实例，这时不合理，
+采用函数形式定义initData会将其作为工厂韩式返回全新的data
+有效的避免多个实例之间状态污染问题，Vue根实例创建不存在该限制，因为根实例只有一个
+</code></pre></div><h3 id="_7-对keep-alive的了解"><a href="#_7-对keep-alive的了解" class="header-anchor">#</a> 7.对keep-alive的了解</h3> <div class="language- extra-class"><pre><code>用来缓存组件 提升性能
+用来缓存组件 提升性能 是vue内置组件，能在组件切换过程中将状态保留在内存中，防止重复渲染
+keep-alive它不会在dom树中渲染
+使用时会多两个生命周期函数 activated 激活  deactivated 停用
+使用场景 如进入详情页，每次都是相同的，就可以缓存起来，没必要再次请求
+</code></pre></div><h3 id="_8-vue中key的作用"><a href="#_8-vue中key的作用" class="header-anchor">#</a> 8.Vue中key的作用</h3> <div class="language- extra-class"><pre><code>key的作用主要是为了高效的更新虚拟DOM
+如果节点类型不同，直接干掉前面所有的节点，再创建并插入新的节点，不会在比较这个节点之后的子节点
+
+如果节点类型相同，则会重新设置节点的属性，从而实现节点的更新
+
+举例 A B C D E   在B和C中插入F
+</code></pre></div><h3 id="_9-v-if与v-for的优先级"><a href="#_9-v-if与v-for的优先级" class="header-anchor">#</a> 9.v-if与v-for的优先级</h3> <div class="language- extra-class"><pre><code>1.v-for优先级高于v-if被解析
+2.如果同时出现每循环都会执行判断条件，是无法避免的，浪费性能
+3.解决办法：在外层嵌套&lt;template&gt;&lt;/template&gt;在这一层进行判断，内部在进行循环
+</code></pre></div><h3 id="_10-ref是什么"><a href="#_10-ref是什么" class="header-anchor">#</a> 10.ref是什么</h3> <div class="language- extra-class"><pre><code>来获取dom节点
+确保节点渲染完成
+</code></pre></div><h3 id="_11-双向数据绑定原理"><a href="#_11-双向数据绑定原理" class="header-anchor">#</a> 11.双向数据绑定原理</h3> <div class="language- extra-class"><pre><code>vue是通过Object.defineProperty()来实现数据劫持的
+Object.defineProperty(对象，属性，{
+    get(val){},
+    set(val){}
+})
+总结：vue数据双向绑定是通个数据劫持结合发布者-订阅者模式来实现的
+
+1.事件一个监听器Observer,用来劫持并监听所有属性，如有变动，就通知订阅者
+2.实现一个订阅者Watcher,可以收到属性变化通知，并执行相应的函数，从而更新视图
+3.实现一个解析器Compile，可以扫描和解析每个节点的相关指令并根据初始化模板数据以及初始化相应的订阅器
+</code></pre></div><h3 id="_12-vue组件通信"><a href="#_12-vue组件通信" class="header-anchor">#</a> 12.vue组件通信</h3> <div class="language- extra-class"><pre><code>Vue 组件间通信是面试常考的知识点之一，这题有点类似于开放题，你回答出越多方法当然越加分，表明你对 Vue 掌握的越熟练。Vue 组件间通信只要指以下 3 类通信：父子组件通信、隔代组件通信、兄弟组件通信，下面我们分别介绍每种通信方式且会说明此种方法可适用于哪类组件间通信。
+
+（1）props / $emit 适用 父子组件通信
+
+这种方法是 Vue 组件的基础，相信大部分同学耳闻能详，所以此处就不举例展开介绍。
+
+（2）ref 与 children 适用 父子组件通信
+
+ref：如果在普通的 DOM 元素上使用，引用指向的就是 DOM 元素；如果用在子组件上，引用就指向组件实例
+
+children：访问父 / 子实例
+
+（3）EventBus （on） 适用于 父子、隔代、兄弟组件通信
+
+这种方法通过一个空的 Vue 实例作为中央事件总线（事件中心），用它来触发事件和监听事件，从而实现任何组件间的通信，包括父子、隔代、兄弟组件。
+
+（4）listeners 适用于 隔代组件通信
+
+attrs&quot; 传入内部组件。通常配合 inheritAttrs 选项一起使用。
+
+listeners&quot; 传入内部组件
+
+（5）provide / inject 适用于 隔代组件通信
+
+祖先组件中通过 provider 来提供变量，然后在子孙组件中通过 inject 来注入变量。provide / inject API 主要解决了跨级组件间的通信问题，不过它的使用场景，主要是子组件获取上级组件的状态，跨级组件间建立了一种主动提供与依赖注入的关系。
+
+（6）Vuex 适用于 父子、隔代、兄弟组件通信
+
+Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。“store” 基本上就是一个容器，它包含着你的应用中大部分的状态 ( state )。
+
+Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。
+
+改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation。这样使得我们可以方便地跟踪每一个状态的变化。
+</code></pre></div><h3 id="_13-props和data优先级谁高"><a href="#_13-props和data优先级谁高" class="header-anchor">#</a> 13.props和data优先级谁高</h3> <div class="language- extra-class"><pre><code>props &gt; methods &gt; data &gt;computed &gt; watch
+</code></pre></div><h3 id="_14-computed-methods-watch有什么区别"><a href="#_14-computed-methods-watch有什么区别" class="header-anchor">#</a> 14.computed ,methods ,watch有什么区别</h3> <div class="language- extra-class"><pre><code>1.computed vs methods
+computed是有缓存的，methods没有缓存
+2.computed va watch
+watch是监听到当前数据发生改变，才会执行
+computed 是监听某一个属性发生改变才会执行
+</code></pre></div><h3 id="_15-vue常用的指令有哪些"><a href="#_15-vue常用的指令有哪些" class="header-anchor">#</a> 15.vue常用的指令有哪些</h3> <div class="language- extra-class"><pre><code>v-html,v-text,v-if,
+v-show , v-for
+v-bind
+v-model
+v-on
+</code></pre></div><h2 id="三、vue生命周期部分"><a href="#三、vue生命周期部分" class="header-anchor">#</a> 三、Vue生命周期部分</h2> <h3 id="_1-vue生命周期有哪些"><a href="#_1-vue生命周期有哪些" class="header-anchor">#</a> 1.vue生命周期有哪些</h3> <div class="language- extra-class"><pre><code>beforeCreate
+created  实例被创建后 $data已经存在
+beforemount
+mounted 实例被挂在之后$el,$data已经存在
+beforeUpdate
+updated 新的数据对象data渲染之后
+beforeDestroy
+destroyed  组件销毁后
+
+第一次进入组件或者页面执行哪些生命周期函数
+
+beforeCreate
+created
+beforeMount
+mounted
+</code></pre></div><h2 id="四、vue请求数据接口部分"><a href="#四、vue请求数据接口部分" class="header-anchor">#</a> 四、Vue请求数据接口部分</h2> <h2 id="五、vue路由部分"><a href="#五、vue路由部分" class="header-anchor">#</a> 五、Vue路由部分</h2> <h3 id="_1-路由导航守卫有哪些"><a href="#_1-路由导航守卫有哪些" class="header-anchor">#</a> 1.路由导航守卫有哪些</h3> <div class="language- extra-class"><pre><code>全局守卫，
+    router.beforeEach((to,from,next){})  全局前置守卫
+    router.beforeResolve((to,from,next){})  全局解析守卫
+    afterEach((to,from,next){})  全局后置钩子
+路由独享
+    beforeEnter
+组件内的守卫
+    beforeRouteEnter
+    beforeRouteUpdate
+    beforeRouteLeave
+</code></pre></div><h3 id="_2-路由模式有哪些"><a href="#_2-路由模式有哪些" class="header-anchor">#</a> 2.路由模式有哪些</h3> <div class="language- extra-class"><pre><code>hash  
+history
+</code></pre></div><h3 id="_3-路由跳转的方式"><a href="#_3-路由跳转的方式" class="header-anchor">#</a> 3.路由跳转的方式</h3> <div class="language- extra-class"><pre><code>1. router-link
+
+2. this.$router.push() (函数里面调用)
+
+3. this.$router.replace() (用法同push)
+
+4. this.$router.go(n)
+</code></pre></div><h3 id="_4-route和-router的区别"><a href="#_4-route和-router的区别" class="header-anchor">#</a> 4.$route和$router的区别</h3> <div class="language- extra-class"><pre><code>$router为vueRouter的实例,相当于一个全局路由对象，里面含有很多属性和子对象
+
+$route相当于当前正在跳转的路由对象，nane,path,query,params
+</code></pre></div><h3 id="_5-怎么使用动态路由-怎么获取动态路由的参数"><a href="#_5-怎么使用动态路由-怎么获取动态路由的参数" class="header-anchor">#</a> 5.怎么使用动态路由,怎么获取动态路由的参数</h3> <div class="language- extra-class"><pre><code>在router目录下的index.js文件中对path属性加上 /:id
+
+接收：使用 $route.params.id
+</code></pre></div><h2 id="六、vuex部分"><a href="#六、vuex部分" class="header-anchor">#</a> 六、Vuex部分</h2> <h3 id="_1-vuex解决刷新数据丢失的问题"><a href="#_1-vuex解决刷新数据丢失的问题" class="header-anchor">#</a> 1.vuex解决刷新数据丢失的问题</h3> <h3 id="_1-解释一下vuex"><a href="#_1-解释一下vuex" class="header-anchor">#</a> 1.解释一下vuex</h3> <div class="language- extra-class"><pre><code>Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。“store” 基本上就是一个容器，它包含着你的应用中大部分的状态 ( state )。
+
+（1）Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。
+
+（2）改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation。这样使得我们可以方便地跟踪每一个状态的变化。
+
+主要包括以下几个模块：
+
+State：定义了应用状态的数据结构，可以在这里设置默认的初始状态。
+
+Getter：允许组件从 Store 中获取数据，mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性。
+
+Mutation：是唯一更改 store 中状态的方法，且必须是同步函数。
+
+Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作。
+
+Module：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中。
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/interview/vue/" class="prev router-link-active">
+        /interview/vue/
+      </a></span> <span class="next"><a href="/interview/vue/vue面试题.html">
+        vue2面试题
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.eaa3c69d.js" defer></script><script src="/assets/js/2.c479d7b8.js" defer></script><script src="/assets/js/25.f7b82147.js" defer></script>
+  </body>
+</html>
